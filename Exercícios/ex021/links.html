@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+/* SELETORES PERSONALIZADOS
+  #=id
+  .=class
+  :=pseudo-class
+  ::=pseudo-element
+  >=children
+*/
+
+
+
+     body{
+
+    
+        font-family: Arial, Helvetica, sans-serif;
+     }
+     a:visited{
+        color: darkred;
+        
+     }
+     a{
+        color: black; text-decoration: none;font-weight: bold;
+     }
+    a:hover{
+        text-decoration: underline;
+        color: aquamarine;
+    }
+    a:active{
+        color:cadetblue;
+    }
+    .especial::before{
+        content: 'lungas; '
+     }
+
+
+    .especial::after{
+    content: ' bungas';
+    }
+    .especial{
+        background-color: rgba(168, 89, 241, 0.459);
+    }
+    
+    </style>
+    <title>links</title>
+</head>
+<body>
+   <h1>personalizando links</h1> 
+   <ul>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank">github</a></li>
+    <li><a href="https://youtube.com/curosemvideo" target="_blank" class="especial">youtube</a></li>
+    <li><a href="https//:www.curosemvideo.com" target="_blank" >site do curso em video</a></li>
+   </ul>
+</body>
+</html>
